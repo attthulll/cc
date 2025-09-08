@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    #screen {
+      width: 500px;
+      height: 500px;
+      border: 2px solid black;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="screen"></div>
+
+  <button onclick="colorFunction('red')">Red</button>
+  <button onclick="colorFunction('green')">Green</button>
+  <button onclick="colorFunction('blue')">Blue</button>
+  <button onclick="colorFunction('yellow')">Yellow</button>
+
+  <script>
+  function colorFunction(col) {
+     document.getElementById("screen").style.backgroundColor = col;
+    }
+  </script>
+
+</body>
+</html>

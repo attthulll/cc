@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+</head>
+
+<body>
+    <h1>Prime no </h1>
+    <p id="primeno"></p>
+
+    <h1>Factorial of 5</h1>
+    <p id="factorial"></p>
+
+    <h1>Substring Welcome to JavaScript!</h1>
+    <p id="substring"></p>
+
+    <h1>reverse of "Welcome to javascript"</h1>
+    <p id="reverse"></p>
+
+    <h1>Palindrome malayalam</h1>
+    <p id="palindrome"></p>
+
+    <h1>sorting sentence: This sentence is going to be sorted</h1>
+    <p id="sortsentence"></p>
+
+    <h1>sorting array [10, 2, 30, 25, 5]</h1>
+    <p id="sortarray"></p>
+
+    <h1>anagram</h1>
+    <p id="anagram"></p>
+
+    [10, 45, 2, 99, 23, 78]
+
+    <h1>maximum of  [10, 45, 2, 99, 23, 78]</h1>
+    <p id="max"></p>
+
+     <h1>groups odd or even [1, 2, 3, 4, 5, 6, 7, 8, 9]</h1>
+    <p id="grouping"></p>
+
+
+    <script>
+        //prime no
+        let number = 7;
+        let isPrime = true;
+        let result;
+
+        if (number <= 1) {
+            isPrime = false;
+        } else if (number === 2) {
+            isPrime = true;
+        } else if (number % 2 === 0) {
+            isPrime = false;
+        } else {
+            for (let i = 3; i <= Math.sqrt(number); i += 2) {
+                if (number % i === 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
+
+        if (isPrime) {
+            result = number + " is a prime number.";
+        } else {
+            result = number + " is not a prime number.";
+        }
+        document.getElementById("primeno").textContent = result
+        //factorial
+        let fact = 1;
+        let i = 1;
+        while (i < 6) {
+            fact = fact * i
+            i++
+        }
+        document.getElementById("factorial").innerHTML = `The factorial is ${fact}`
+
+        //substring
+        let main = "Welcome to JavaScript!";
+        let sub = "JavaScript";
+        let s
+
+        if (main.includes(sub)) {
+            s = (`Yes, the string contains "${sub}".`);
+        } else {
+            s = (`No, the string does not contain "${sub}".`);
+        }
+        document.getElementById("substring").innerHTML = s
+
+        //reverse sentence
+        let sentence = "Welcome to javascript"
+
+        let words = sentence.split(' ');
+        let reverse = '';
+
+        for (let i = words.length - 1; i >= 0; i--) {
+            reverse += words[i];
+            if (i != 0) reverse += ' ';
+        }
+
+        document.getElementById("reverse").innerHTML = reverse
+
+        //palindrome
+        let word = "malayalam"
+        let reversed = ""
+        for (let i = word.length - 1; i >= 0; i--) {
+            reversed += word[i]
+        }
+        if (word == reversed) {
+            document.getElementById("palindrome").innerHTML = reversed + " is palindrome"
+        } else {
+            document.getElementById("palindrome").innerHTML = reversed + " is not palindrome"
+        }
+
+        //sort sentence
+        let orgsentence = "This sentence is going to be sorted"
+        let sortingwords = orgsentence.toLowerCase().split(' ');
+        sortingwords.sort();
+        let sortedSentence = sortingwords.join(' ');
+        document.getElementById("sortsentence").innerHTML = sortedSentence
+
+
+        //sort array
+
+        let numbers = [10, 2, 30, 25, 5];
+
+        z = numbers.sort(function (a, b) {
+            return a - b; // ascending order
+        });
+
+        document.getElementById("sortarray").innerHTML = z
+
+        // anagram 
+        let str1 = "listen";
+        let str2 = "silent";
+
+        
+        let sortedStr1 = str1.toLowerCase().split("").sort().join("");
+        let sortedStr2 = str2.toLowerCase().split("").sort().join("");
+
+       
+        if (sortedStr1 === sortedStr2) {
+            document.getElementById("anagram").innerHTML = `"${str1}" and "${str2}" are anagrams.`;
+        } else {
+            document.getElementById("anagram").innerHTML = `"${str1}" and "${str2}" are NOT anagrams.`;
+        }
+
+        //maxnumber
+         let numbers1 = [10, 45, 2, 99, 23, 78];
+
+    // Assume first number is the maximum
+    let maxNumber = numbers1[0];
+
+    // Loop through the array
+    for (let i = 1; i < numbers1.length; i++) {
+        if (numbers1[i] > maxNumber) {
+            maxNumber = numbers1[i];
+        }
+    }
+     document.getElementById("max").innerHTML = "The maximum number is: " + maxNumber;
+
+//group
+
+let numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let evens = [];
+    let odds = [];
+
+    // Loop through the array
+    for (let i = 0; i < numbers2.length; i++) {
+        if (numbers2[i] % 2 === 0) {
+            evens.push(numbers2[i]); // Add to evens array
+        } else {
+            odds.push(numbers2[i]); // Add to odds array
+        }
+    }
+
+    // Display result in HTML
+    document.getElementById("grouping").innerHTML = 
+        "Even Numbers: " + evens.join(", ") + "<br>" +
+        "Odd Numbers: " + odds.join(", ");
+
+    </script>
+</body>
+
+</html>

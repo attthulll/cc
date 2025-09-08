@@ -1,0 +1,245 @@
+<html>
+<head><title>Photo Gallery</title>
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    font-family: Arial;
+}
+
+.header{width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(187, 30, 30);
+        padding-bottom: 10px;
+    }
+.header h3{
+    color: aliceblue;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 3em;
+    font-family: serif;
+    font-weight: bolder;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+.header span{
+    font-weight: 100;
+    font-size: 1em;}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+    width: 100%;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+        
+.pagination{
+    background-color: rgb(235, 27, 27);
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    margin-top: 5px;
+
+}
+        .pagination a
+        {
+            display: inline-block;
+            padding: 8px 16px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        .pagination a.active
+        {
+            background-color: rgb(39, 230, 39);
+            color: rgb(0, 0, 0);
+            border-radius: 5px;
+        }
+        .pagination a:hover:not(.active){background-color: rgb(91, 91, 91);border-radius: 5px;}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+<div class="header">
+    <h3>Image <span>Gallery</span></h3>
+</div>
+<div class="row"> 
+  <div class="column">
+    <a target="_blank" href="Monkey D_ Luffy.jpg">
+            <img src="Monkey D_ Luffy.jpg"  alt="Monkey D Luffy">
+        </a>
+        <a target="_blank" href="batman.jpg">
+            <img src="batman.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="heisenberg.jpg">
+            <img src="heisenberg.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="GalaxyRG265 - Spider-Man.Across.the.Spider-Verse.2023.1080p.BluRay.DDP5.1.x265.10bit-GalaxyRG265 - VLC media player 06-05-2024 14_21_04.png">
+            <img src="GalaxyRG265 - Spider-Man.Across.the.Spider-Verse.2023.1080p.BluRay.DDP5.1.x265.10bit-GalaxyRG265 - VLC media player 06-05-2024 14_21_04.png"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="One Piece - 385.mkv - VLC media player 07-04-2023 18_40_49.png">
+            <img src="One Piece - 385.mkv - VLC media player 07-04-2023 18_40_49.png"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="batman.jpg">
+            <img src="batman.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/flipped.jpg">
+            <img src="images/flipped.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/lalaland2.jpg">
+            <img src="images/lalaland2.jpg"  alt="beforesunrise">
+        </a>
+  </div>
+  
+  <div class="column">
+    <a target="_blank" href="images/anyonebutyou.jpg">
+            <img src="images/anyonebutyou.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/atonement2.jpg">
+        <img src="images/atonement2.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/beforesunrise2.jpg">
+            <img src="images/beforesunrise2.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/atonement3.jpg">
+            <img src="images/atonement3.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/bewithyou.jpg">
+            <img src="images/bewithyou.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/Bridge.jpg">
+            <img src="images/Bridge.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/morethanblue.jpg">
+            <img src="images/morethanblue.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/mygirl.jpg">
+            <img src="images/mygirl.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/whiplash.jpg">
+            <img src="images/whiplash.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/got.jpg">
+            <img src="images/got.jpg"  alt="beforesunrise">
+        </a>
+         <a target="_blank" href="images/aot.jpg">
+            <img src="images/aot.jpg"  alt="beforesunrise">
+        </a>
+        
+        
+  </div> 
+   
+  <div class="column">
+    <a target="_blank" href="images/bullettrain.jpg">
+            <img src="images/bullettrain.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/chernobyl.jpg">
+            <img src="images/chernobyl.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/eternalsunshineofthespottles.jpg">
+            <img src="images/eternalsunshineofthespottles.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/flipped.jpg">
+            <img src="images/flipped.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/got.jpg">
+            <img src="images/got.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/interstellar.jpg">
+            <img src="images/interstellar.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/s7even.jpg">
+            <img src="images/s7even.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/lalaland.jpg">
+            <img src="images/lalaland.jpg"  alt="beforesunrise">
+        </a>
+         <a target="_blank" href="images/prisoners.jpg">
+            <img src="images/prisoners.jpg"  alt="beforesunrise" >
+        </a>
+        <a target="_blank" href="images/iron.jpg">
+            <img src="images/iron.jpg"  alt="beforesunrise">
+        </a>
+              
+  </div>
+  <div class="column">
+    <a target="_blank" href="images/loki.jpg">
+            <img src="images/loki.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/drive.jpg">
+            <img src="images/drive.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/social.jpg">
+            <img src="images/social.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/blade.jpg">
+            <img src="images/blade.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/seven.jpg">
+            <img src="images/seven.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/joker.jpg">
+            <img src="images/joker.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/jojo.jpg">
+            <img src="images/jojo.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/openh.jpg">
+            <img src="images/openh.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/itw.jpg">
+            <img src="images/itw.jpg"  alt="beforesunrise" >
+        </a>
+        <a target="_blank" href="images/vinlandsaga.jpg">
+            <img src="images/vinlandsaga.jpg"  alt="beforesunrise" >
+        </a>
+        <a target="_blank" href="images/onepiece.jpg">
+            <img src="images/onepiece.jpg"  alt="beforesunrise">
+        </a>
+        <a target="_blank" href="images/vagabond.jpg">
+            <img src="images/vagabond.jpg"  alt="beforesunrise">
+        </a>     
+  </div> 
+</div>
+<div class="pagination-container"></div>
+ <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a class="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+</div>
+
+</body>
+</html>

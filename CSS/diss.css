@@ -1,0 +1,54 @@
+a {
+    background-color: #cf1313;
+    color: white;
+    padding: 50px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    background-color: red;
+    color: turquoise;
+}
+
+.none {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#div2 {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    background-color: rgb(234, 106, 21);
+    box-shadow: 2px 2px 5px rgb(77, 74, 74);
+}
+
+#div3 {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation: mymove 5s infinite;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    @keyframes mymove {
+        from {left: 0px;}
+        to {left: 600px;}
+    }
+
+#div4 {
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+    animation-name: example;
+    animation-duration: 5s;
+}
+@keyframes example {
+    from {background-color: orangered;}
+    to {background-color: chartreuse;}
+}

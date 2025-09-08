@@ -1,0 +1,42 @@
+.outer{
+    background-color: aqua;
+    height: 873px;
+    width: 1875px; 
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+.inner1{
+    background-color: blueviolet;
+    height: 200px;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.inner2{
+    background-color: rgb(95, 64, 124);
+    height: 200px;
+    width: 400px;
+    margin-top: 202px;
+    margin-left: 200px;
+
+}
+
+.inner3{
+    background-color: rgb(35, 22, 48);
+    height: 200px;
+    width: 400px;
+    margin-top: -201px;
+    margin-left: 1180px;
+
+}
+
+.inner4{
+    background-color: rgb(100, 85, 114);
+    height: 200px;
+    width: 400px;
+    margin-top: -598px;
+    margin-left: 1180px;
+
+}

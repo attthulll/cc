@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Example</title>
+</head>
+<body>
+  <h1> Hii Hello</h1>
+  <button onclick="display()">Click Me</button>
+
+  <script>
+    function display() {
+      console.log("good morning");
+    }
+    display()
+   
+
+    var a = 8;
+    a = 12;
+    var a = 15;
+    console.log("a = ", a);
+
+    let b = 10;
+    b = 23;
+    b = 67;
+    console.log("b = ", b);
+
+    const c = 5;
+    console.log("c = ", c);
+
+
+    console.log("Average of 3 Numbers");
+    let p = 4, q = 3, r = 6;
+    let avg = (p + q + r) / 3;
+    console.log("Average of 3 numbers = ", avg);
+
+
+    console.log("Area of a Circle");
+    var radius = 5;
+    const pi = 3.14;
+    let area = pi * radius * radius;
+    console.log("Area of circle = ", area);
+
+   
+    console.log("Perimeter of a Circle");
+    let perimtr = 2 * pi * radius;
+    console.log("Perimeter of circle = ", perimtr);
+
+    b=24
+
+    if (b % 2 == 0) {
+      console.log("the number, "+ b + " is even")
+    } else {
+      console.log("the number, "+ b + " is odd")
+    }
+    
+   a=78
+   if(a>0){    
+    console.log("Positive") 
+   }else if(a==0){
+    console.log("Zero")
+   }else{
+    console.log("Negative")
+   }
+  
+    for(i =1; i<=10; i++) {
+      console.log(i)
+    }
+    // 1-50 even number
+    for(i =1; i<=50; i++) 
+    {
+      if(i%2==0)
+    {
+      console.log(i)
+    }
+    }
+
+    //array declaration
+    var arr = ["mango",[1,2,3],"apple",97,"banana",7.8]
+    console.log(arr);
+
+    console.log(arr[2])
+    console.log(arr[3])
+    console.log(arr[1][2])
+
+    console.log(arr.length)
+    console.log(arr[2].length)
+
+    arr[1] = 67
+    console.log(arr[1])
+    console.log(arr)
+
+   //string declartion
+   var s="good morning"
+   console.log(s)
+   console.log(s[0])
+   console.log(s.length) 
+
+   
+
+
+  </script>
+</body>
+</html>

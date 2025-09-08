@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container {
+                 display: grid;
+                 grid-template-areas:
+                "header header"
+                "menu content"
+                "footer footer";
+                grid-template-columns: 1fr 3fr;
+                gap: 5px;
+                background-color: #f32121;
+                padding: 5px;
+            }
+
+.container > div {
+  background-color: rgba(204, 190, 190, 0.8);
+  padding: 10px;
+}
+
+.container > div.header {
+  grid-area: header;
+  text-align: center;
+}
+
+.container > div.menu {
+  grid-area: menu;
+  text-align: center;
+}
+
+.container > div.content {
+  grid-area: content;
+}
+
+.container > div.footer {
+  grid-area: footer;
+}
+ </style>
+
+<h1>CSS Grid Layout</h1>
+<div class="container">
+  <div class="header"><h2>Header</h2></div>
+  <div class="menu"><a href="https://www.youtube.com/"><img border="0" alt="youtube" src="youtu.png" width="160" height="100"></a><br>
+    <a href="https://letterboxd.com/attthulll/"><img border="0" alt="letterboxd" src="ltterbxd.png" width="100" height="100"></a><br>
+    <a href="https://github.com/"><img border="0" alt="github" src="git.png" width="100" height="50"></a></div>
+  <div class="content"><h3>HELLO WORLD!</h3><p>A "Hello, World!" program is usually a simple computer program that emits (or displays) to the screen (often the console) a message similar to "Hello, World!". A small piece of code in most general-purpose programming languages, this program is used to illustrate a language's basic syntax. Such a program is often the first written by a student of a new programming language,[1] but it can also be used as a sanity check to ensure that the computer software intended to compile or run source code is correctly installed, and that its operator understands how to use it.</p></div>
+  <div class="footer"><h4>Footer</h4><p>Author: Athul Jayaraj<br>
+  <a href="athuljayaraj15@gmail.com">athuljayaraj15@gmail.com</a></p></div>
+</div>
+
+</body>
+</html>
+
+    </head>
+</html>

@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio — Athul Jayaraj</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9d8b6d6.js" crossorigin="anonymous"></script>
+
+  <style>
+    :root{--accent:#6c63ff;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:#0f1724; background:#f8fafc}
+    .navbar-brand{font-weight:700; letter-spacing:.3px}
+
+    .hero{min-height:75vh; display:flex; align-items:center;}
+    .hero-bg{background:linear-gradient(135deg, rgba(108,99,255,0.12) 0%, rgba(99,102,241,0.06) 40%, rgba(99,102,241,0.03) 100%); border-radius:20px; padding:2rem}
+    .profile-photo{width:140px;height:140px;border-radius:18px;object-fit:cover;box-shadow:0 12px 30px rgba(12,18,32,0.08);border:6px solid #fff}
+
+    .card-quiet{background:#fff;border:0;border-radius:14px;box-shadow:0 8px 24px rgba(12,18,32,0.06)}
+    .skill-badge{background:rgba(108,99,255,0.08); color:var(--accent); border-radius:999px; padding:.35rem .7rem; font-weight:600}
+
+    .timeline {position:relative}
+    .timeline::before{content:''; position:absolute; left:22px; top:0; bottom:0; width:3px; background:linear-gradient(180deg,var(--accent),transparent)}
+    .timeline-item{position:relative; padding-left:56px; margin-bottom:2rem}
+    .timeline-item::before{content:''; position:absolute; left:12px; top:6px; width:20px; height:20px; border-radius:50%; background:#fff; border:4px solid var(--accent)}
+
+    footer{padding:3rem 0}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Athul Jayaraj</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-3"><a class="btn btn-outline-primary btn-sm" href="#resume">Resume</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="container hero py-5">
+  <div class="row g-4 align-items-center">
+    <div class="col-lg-6">
+      <div class="hero-bg">
+        <div class="d-flex align-items-center gap-4">
+          <img src="athul.jpg" alt="Profile" class="profile-photo">
+          <div>
+            <h1 class="mb-1" style="font-size:1.9rem">Hi, I'm <span style="color:var(--accent)">Athul Jayaraj</span></h1>
+            <p class="mb-2 text-muted">BCA Graduate • Web Developer • Problem Solver passionate about building secure, scalable, and user-friendly applications.</p>
+            <div class="d-flex gap-2">
+              <a href="#projects" class="btn btn-primary btn-lg">View work</a>
+              <a href="#contact" class="btn btn-outline-secondary btn-lg">Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 row g-2">
+          <div class="col-auto"><span class="skill-badge">Python</span></div>
+          <div class="col-auto"><span class="skill-badge">Java</span></div>
+          <div class="col-auto"><span class="skill-badge">C / C++</span></div>
+          <div class="col-auto"><span class="skill-badge">PHP</span></div>
+          <div class="col-auto"><span class="skill-badge">JavaScript</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="card card-quiet p-4">
+        <h5 class="mb-3">Quick stats</h5>
+        <div class="row gx-3 gy-3 text-center">
+          <div class="col-4">
+            <div class="h2 mb-0">BCA</div>
+            <small class="text-muted">Degree</small>
+          </div>
+          <div class="col-4">
+            <div class="h2 mb-0">2+</div>
+            <small class="text-muted">Projects</small>
+          </div>
+          <div class="col-4">
+            <div class="h2 mb-0">2025</div>
+            <small class="text-muted">Graduation</small>
+          </div>
+        </div>
+
+        <hr>
+        <h6 class="mb-2">Core strengths</h6>
+        <p class="small text-muted mb-1">Software development, Backend engineering, Problem solving, Analytical thinking, Team collaboration</p>
+        <div class="mt-3 d-flex gap-2 flex-wrap">
+          <a class="btn btn-sm btn-outline-primary" href="#projects">Portfolio</a>
+          <a class="btn btn-sm btn-outline-secondary" href="#resume">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <!-- About -->
+  <section id="about" class="py-5">
+    <h2>About me</h2>
+    <p class="text-muted">I am a BCA graduate from Sree Narayana College of Technology, Kollam (Kerala University). Skilled in Python, Java, C, C++, PHP, HTML, CSS, and JavaScript. I love creating efficient IT solutions and am passionate about problem-solving and continuous learning.</p>
+    <ul class="list-unstyled d-flex gap-4 flex-wrap">
+      <li><strong>Location:</strong> Kollam, Kerala, India</li>
+      <li><strong>Email:</strong> <a href="mailto:athuljayaraj15@gmail.com">athuljayaraj15@gmail.com</a></li>
+      <li><strong>Phone:</strong> 9400766672</li>
+    </ul>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-5">
+    <h3>Technical Skills</h3>
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <div class="mb-3"><div class="d-flex justify-content-between"><small>Java</small><small>90%</small></div><div class="progress"><div class="progress-bar" style="width:90%"></div></div></div>
+        <div class="mb-3"><div class="d-flex justify-content-between"><small>HTML / CSS / JavaScript</small><small>85%</small></div><div class="progress"><div class="progress-bar" style="width:85%"></div></div></div>
+        <div class="mb-3"><div class="d-flex justify-content-between"><small>Python</small><small>80%</small></div><div class="progress"><div class="progress-bar" style="width:80%"></div></div></div>
+      </div>
+      <div class="col-md-6">
+        <div class="mb-3"><div class="d-flex justify-content-between"><small>PHP & MySQL</small><small>75%</small></div><div class="progress"><div class="progress-bar" style="width:75%"></div></div></div>
+        <div class="mb-3"><div class="d-flex justify-content-between"><small>C / C++</small><small>70%</small></div><div class="progress"><div class="progress-bar" style="width:70%"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-5">
+    <h3>Selected Projects</h3>
+    <div class="row g-4 mt-2">
+      <div class="col-md-6">
+        <div class="card card-quiet h-100 p-3">
+          <div class="card-body">
+            <h5 class="card-title">Twinlock</h5>
+            <p class="card-text text-muted small">Dual-server authenticated encryption with keyword search (AEKS). Strengthened data privacy and search efficiency in distributed systems.</p>
+            <p class="small"><strong>Tech:</strong> Java, JCA, JDBC, MySQL, Socket Programming</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card card-quiet h-100 p-3">
+          <div class="card-body">
+            <h5 class="card-title">Crime Guard</h5>
+            <p class="card-text text-muted small">Online platform for filing FIRs and paperwork like charge sheets, improving community interaction with law enforcement.</p>
+            <p class="small"><strong>Tech:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-5">
+    <h3>Experience</h3>
+    <!-- keep your original placeholder jobs -->
+    <div class="timeline">
+      <div class="timeline-item">
+        <h6>Junior QA Engineer <small class="text-muted">— Company A (2022 — Present)</small></h6>
+        <p class="text-muted small">Built automation framework and collaborated with developers to harden release quality.</p>
+      </div>
+      <div class="timeline-item">
+        <h6>Frontend Developer <small class="text-muted">— Company B (2020 — 2022)</small></h6>
+        <p class="text-muted small">Implemented accessible UI components and helped establish component library.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="resume" class="py-5">
+    <h3>Education</h3>
+    <div class="card card-quiet p-3 mb-3">
+      <h6>Bachelor of Computer Applications (BCA)</h6>
+      <small class="text-muted">Sree Narayana College of Technology, Kollam (Kerala University) — 2022-2025 • CGPA: 6.915</small>
+    </div>
+    <a href="Athul-resume.pdf" class="btn btn-primary" download>Download Resume</a>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <h3>Contact</h3>
+    <div class="row mt-3">
+      <div class="col-md-7">
+        <div class="card card-quiet p-3">
+          <ul class="list-unstyled mb-0">
+            <li><strong>Phone:</strong> 9400766672</li>
+            <li><strong>Email:</strong> <a href="mailto:athuljayaraj15@gmail.com">athuljayaraj15@gmail.com</a></li>
+            <li><strong>Address:</strong> Kankottu House, Thevally, Kollam 691009</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-white text-center mt-5 border-top">
+  <div class="container py-4">
+    <small class="text-muted">© <span id="year"></span> Athul Jayaraj</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

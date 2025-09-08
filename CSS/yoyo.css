@@ -1,0 +1,42 @@
+h3{
+    color: chartreuse;
+    background-color: blue;
+}
+.head{
+    color: brown;
+    background-color: white;
+}
+#para1{
+    color: blueviolet;
+}
+#para2{
+    color: crimson;
+}
+button{
+    color:black;
+    background-color:cadetblue;
+}
+.box{
+    border: 5px solid;
+    border-color: black;
+    background: aquamarine;
+    height: 150px;
+    width: 150px;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    padding-left: 50px;
+    padding-bottom: 25px;
+}
+.inner-box{
+    border:5px;
+    border-color: blueviolet;
+    background: rgb(127, 129, 255);
+    height: 55px;
+    width: 33px;
+    margin-top: 37px;
+    margin-left: 8px;
+    margin-bottom: 25px;
+    padding-left: 48px;
+    padding-bottom: 22px;
+}

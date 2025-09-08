@@ -1,0 +1,120 @@
+body{ 
+    margin: 0;
+     font-family: Verdana;
+     min-width:100vw;
+     overflow:hidden;
+     box-sizing: border-box;}
+.head{
+   
+    background-color:#3b5999;
+    display: grid;
+    grid-template-columns: 5fr 3fr 3fr 2fr;
+    align-content: center;
+    padding: 20px;
+    column-gap: 40px;
+    
+}
+#heading{
+        color: white;
+        
+}
+#emailbox label,#emailpass label{
+    text-align: left;
+    font-size: 16px;
+    display: inline-block;
+    padding-bottom: 10px;
+    text-wrap: nowrap;
+    color: rgb(236, 240, 243);
+    
+    }
+#emailbox input[type="text"],#emailpass input[type="password"]{
+    width: 100%;
+    line-height: 25px;
+    background-color: rgb(199, 225, 247);
+    border: 1px solid black;  
+}
+a{
+    display: inline-block;
+    padding-top: 10px;
+    color: #395899;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+a:hover{text-decoration: underline;}
+.head button{
+    text-align: center;
+    color: white;
+    border: 1px solid rgb(24, 24, 66);
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #5f5fef;
+    width: 60%;
+    height: 30px;
+    margin-top: 28px;
+    padding:5px 8px 5px 8px;
+}
+.head button:hover{background-color: rgb(63, 63, 214);}
+
+main{
+    height: 85vh;
+    display: grid;
+    grid-template-columns:50% 50%;
+    background:linear-gradient(to bottom, rgb(255, 255, 255),rgb(117, 119, 147))
+}
+main .leftbox .content{
+    text-align:left;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 110px;
+    margin-left: 125px;
+    color: #0c1e46;
+    
+    
+}
+
+main .rightbox > h1{
+    text-wrap: nowrap;
+    text-align: left;
+
+}
+main .rightbox .textbox input[type="text"],main .rightbox .textbox input[type="password"]{
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    display: inline-block;
+    font-size: 20px;
+}
+.textbox #mob{width: 640px;}
+.textbox #pass{width: 640px;}
+.rightbox .bday{
+    color: #395899;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px;
+}
+.rightbox select{
+    margin-left: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+.textbox input[type="radio"],.gen{
+    margin-left: 10px;
+    font-weight: bold;
+    
+}
+.rightbox .exp{
+    color: rgb(97, 96, 96);
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.rightbox .signup{
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: green;
+    font-size: 16px;
+    font-weight:bold
+}
